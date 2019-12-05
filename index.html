@@ -2,348 +2,919 @@
 <!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js ie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 
    <!--- Basic Page Needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Keep It Simple.</title>
-	<meta name="description" content="">  
+	<title>Puremedia</title>
+	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<!-- mobile specific metas
+   <!-- Mobile Specific Metas
    ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-   <!-- CSS
+	<!-- CSS
     ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">  
-	<link rel="stylesheet" href="css/media-queries.css"> 
+   <link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/media-queries.css">
 
    <!-- Script
-   ================================================== -->
+   =================================================== -->
 	<script src="js/modernizr.js"></script>
 
    <!-- Favicons
-	================================================== -->
+	=================================================== -->
 	<link rel="shortcut icon" href="favicon.png" >
 
 </head>
 
-<body>
+<body class="homepage">
+
+   <div id="preloader">
+	   <div id="status">
+         <img src="images/loader.gif" height="60" width="60" alt="">
+         <div class="loader">Loading...</div>
+      </div>
+   </div>
+
 
    <!-- Header
+   =================================================== -->
+   <header id="main-header">
+
+   	<div class="row header-inner">
+
+	      <div class="logo">
+	         <a class="smoothscroll" href="#hero">TXTEngSubs</a>
+	      </div>
+
+	      <nav id="nav-wrap">
+
+	         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
+	         	<span class='menu-text'>Show Menu</span>
+	         	<span class="menu-icon"></span>
+	         </a>
+         	<a class="mobile-btn" href="#" title="Hide navigation">
+         		<span class='menu-text'>Hide Menu</span>
+         		<span class="menu-icon"></span>
+         	</a>
+
+	         <ul id="nav" class="nav">
+	            <li class="current"><a class="smoothscroll" href="#hero">Home.</a></li>
+		         <li><a class="smoothscroll" href="#portfolio">Newest Uploads.</a></li>
+	            <li><a class="smoothscroll" href="#services">Updates.</a></li>
+	            <li><a class="smoothscroll" href="#about">Schedule.</a></li>
+	            <li><a class="smoothscroll" href="#journal">Twitter.</a></li>
+	         </ul>
+
+	      </nav> <!-- /nav-wrap -->
+
+	   </div> <!-- /header-inner -->
+
+   </header>
+
+
+   <!-- Hero
+   =================================================== -->
+   <section id="hero">
+
+		<div class="row hero-content">
+
+			<div class="twelve columns flex-container">
+
+			   <div id="hero-slider" class="flexslider">
+
+				   <ul class="slides">
+
+					   <!-- Slide -->
+					 <!--  <li>
+						   <div class="flex-caption">
+								<h1>Hello, we are puremedia. We make awesome and stunning digital stuff.</h1>
+								<p><a class="button stroke smoothscroll" href="#about">More About Us</a></p>
+							</div>
+					   </li>-->
+
+					   <!-- Slide -->
+					   <li>
+							<div class="flex-caption">
+							<!--	<h1 >We imagine, craft and manage your brand in this new digital world.</h1>-->
+								<p><a class="button stroke smoothscroll" href="#portfolio">See my newest upload</a></p>
+							</div>
+					   </li>
+
+					   <!-- Slide -->
+					  <!-- <li>
+						   <div class="flex-caption">
+								<h1 >Take a look at some of <a class="smoothscroll" href="#portfolio" title="">our works</a> or <a class="smoothscroll" href="#contact" title="">contact us</a> to discuss how we can help you.</h1>
+								<p><a class="button stroke smoothscroll" href="#contact">Get In Touch</a></p>
+							</div>
+					   </li>-->
+
+				   </ul>
+
+			   </div> <!-- .flexslider -->
+
+	      </div> <!-- .flex-container -->
+
+		</div> <!-- .hero-content -->
+
+   </section> <!-- #hero -->
+
+
+   <!-- Portfolio
    ================================================== -->
-   <header id="top">
+   <section id="portfolio">
 
-   	<div class="row">
+      <div class="row section-head">
 
-   		<div class="header-content twelve columns">
+      	<div class="twelve columns">
 
-		      <h1 id="logo-text"><a href="index.html" title="">Keep It Simple.</a></h1>
-				<p id="intro">Put your awesome slogan here...</p>
+	         <h1>Newest uploads<span>.</span></h1>
 
-			</div>			
+	         <hr />
+
+	         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+	         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+	         voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	         </p>
+
+	      </div>
+
+      </div>
+
+      <div class="row items">
+
+      	<div class="twelve columns">
+
+            <div id="portfolio-wrapper" class="bgrid-fourth s-bgrid-third mob-bgrid-half group">
+
+          	   <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="portfolio.html">
+                        <img src="images/portfolio/grizzly.jpg" alt="Grizzly">
+                        <div class="overlay"></div>
+                        <div class="portfolio-item-meta">
+          					      <h5>Grizzly</h5>
+                              <p>Photography</p>
+          					</div>
+                     </a>
+
+                  </div>
+          		</div> <!-- /item -->
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="portfolio.html">
+                        <img src="images/portfolio/hotel.jpg" alt="Hotel Sign">
+                        <div class="overlay">
+                        	<div class="portfolio-item-meta">
+          					      <h5>Hotel Sign</h5>
+                              <p>Webdesign</p>
+          					   </div>
+                        </div>
+                     </a>
+
+                  </div>
+          		</div> <!-- /item -->
+
+               <div class="bgrid stack item">
+                  <div class="item-wrap">
+
+                     <a href="portfolio.html">
+                        <img src="images/portfolio/beetle.jpg" alt="Beetle">
+                        <div class="overlay">
+                        	<div class="portfolio-item-meta">
+          					      <h5>Beetle</h5>
+                              <p>Branding</p>
+          					   </div>
+                        </div>
+                     </a>
+
+                  </div>
+          		</div> <!-- /item -->
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="portfolio.html">
+                        <img src="images/portfolio/banjo-player.jpg" alt="Banjo Player">
+                        <div class="overlay">
+                        	<div class="portfolio-item-meta">
+          					      <h5>Banjo Player</h5>
+                              <p>Videography</p>
+          					   </div>
+                        </div>
+                     </a>
+
+                  </div>
+          		</div> <!-- /item -->
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="portfolio.html">
+                     	<img src="images/portfolio/coffee.jpg" alt="Coffee Cup">
+                       	<div class="overlay">
+                       		<div class="portfolio-item-meta">
+          					      <h5>Coffee Cup</h5>
+                              <p>Photography</p>
+          					   </div>
+                       	</div>
+                     </a>
+
+                  </div>
+          		</div> <!-- /item -->
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="portfolio.html">
+                        <img src="images/portfolio/farmerboy.jpg" alt="Farmerboy">
+                        <div class="overlay">
+                        	<div class="portfolio-item-meta">
+          					      <h5>Farmerboy</h5>
+                              <p>Branding</p>
+          					   </div>
+                        </div>
+                     </a>
+
+                  </div>
+          		</div> <!-- /item -->
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="portfolio.html">
+                        <img src="images/portfolio/judah.jpg" alt="Judah">
+                        <div class="overlay">
+                        	<div class="portfolio-item-meta">
+          					      <h5>Judah</h5>
+                              <p>Web Design</p>
+          					   </div>
+                        </div>
+                     </a>
+
+                  </div>
+          		</div> <!-- /item -->
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="portfolio.html">
+                        <img src="images/portfolio/embossed-paper.jpg" alt="Embossed Paper">
+                        <div class="overlay">
+                        	<div class="portfolio-item-meta">
+          					      <h5>Embossed Paper</h5>
+                              <p>Branding</p>
+          					   </div>
+                        </div>
+                     </a>
+
+                  </div>
+          		</div>  <!-- item end -->
+
+            </div> <!-- /portfolio-wrapper -->
+
+         </div> <!-- /twelve -->
+
+      </div>  <!-- /row -->
+
+   </section> <!-- /Portfolio -->
+
+
+   <!-- Services Section
+   ================================================== -->
+   <section id="services">
+
+   	<div class="row section-head">
+
+   		<div class="twelve columns">
+
+	         <h1>Our Awesome Services<span>.</span></h1>
+
+	         <hr />
+
+	         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+	         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+	         voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	         </p>
+
+         </div>
+
+      </div>
+
+      <div class="row">
+
+      	<div class="twelve columns">
+
+	      	<div class="service-list bgrid-third s-bgrid-half mob-bgrid-whole">
+
+	      		<div class="bgrid">
+
+	               <div class="icon-part">
+	               	<span class="icon-graph"></span>
+	               </div>
+
+	               <h3>Marketing.</h3>
+
+	               <div class="service-content">
+		               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+	         			</p>
+	               </div>
+
+	            </div> <!-- /bgrid -->
+
+				   <div class="bgrid">
+
+	              	<div class="icon-part">
+	               	<i class="icon-film"></i>
+	               </div>
+
+	               <h3>Videography.</h3>
+
+	               <div class="service-content">
+		               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventoveritatis et quasi architecto beatae vitae dicta sunt explicabo.
+	         			</p>
+	               </div>
+
+	            </div> <!-- /bgrid -->
+
+				   <div class="bgrid">
+
+	              	<div class="icon-part">
+	               	<i class="icon-camera"></i>
+	               </div>
+
+	               <h3>Photography.</h3>
+
+	               <div class="service-content">
+		               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+	         			</p>
+	               </div>
+
+	            </div> <!-- /bgrid -->
+
+				   <div class="bgrid first">
+
+	              	<div class="icon-part">
+	               	<i class="icon-eye"></i>
+	               </div>
+
+	               <h3>Branding.</h3>
+
+	               <div class="service-content">
+		               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+	         			</p>
+	               </div>
+
+	            </div> <!-- /bgrid -->
+
+				   <div class="bgrid">
+
+	              	<div class="icon-part">
+	               	<i class="icon-screen-desktop"></i>
+	               </div>
+
+	               <h3>Web Design.</h3>
+
+	               <div class="service-content">
+		               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+	         			</p>
+	               </div>
+
+	             </div> <!-- /bgrid -->
+
+				   <div class="bgrid">
+
+	               <div class="icon-part">
+	               	<i class="icon-eyeglasses"></i>
+	               </div>
+
+	               <h3>Web Development.</h3>
+
+	               <div class="service-content">
+		               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+	         			</p>
+	               </div>
+
+	            </div> <!-- /bgrid -->
+
+	      	</div> <!-- /service-list -->
+
+	      </div> <!-- /twelve -->
+
+      </div> <!-- /row -->
+
+   </section> <!-- /services -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+   	<div class="row section-head">
+
+   		<div class="twelve columns">
+
+	         <h1>Who Are We<span>.</span></h1>
+
+	         <hr />
+
+	         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+	         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+	         voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	         </p>
+
+	      </div>
+
+      </div>
+
+      <div class="row about-content">
+
+      	<div class="mob-whole six columns left">
+
+      		<h3>Our Process.</h3>
+
+	      	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+	         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+	         voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	         </p>
+
+      	</div> <!-- /left -->
+
+      	<div class="mob-whole six columns right">
+
+	      	<h3>Our Approach.</h3>
+
+	      	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+	         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+	         voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	         </p>
+
+      	</div> <!-- /right -->
+
+      </div> <!-- /row -->
+
+      <div class="row about-content">
+
+      	<div class="mob-whole six columns left">
+
+	      	<h3>Our Goal.</h3>
+
+	      	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+	         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+	         voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	         </p>
+
+      	</div> <!-- /left -->
+
+      	<div class="mob-whole six columns right">
+
+	      	<h3>Our Mission.</h3>
+
+	      	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+	         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+	         voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	         </p>
+
+      	</div> <!-- /right -->
+
+      </div> <!-- /row -->
+
+
+      <!-- team
+   	=================================================== -->
+   	<div id='team'>
+
+	      <div class="row team section-head">
+
+	   		<div class="twelve columns">
+
+		         <h1>Our Rockstar Team<span>.</span></h1>
+
+		         <hr />
+
+		         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+		         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+		         voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+		         </p>
+
+		      </div>
+
+	      </div>
+
+      	<div class="row about-content">
+
+      		<div class="twelve columns">
+
+		         <div id="team-wrapper" class="bgrid-half mob-bgrid-whole group">
+
+		            <div class="bgrid member">
+
+		               <div class="member-header">
+
+		                 	<div class="member-pic">
+									<img src="images/team/member01-k.jpg" alt=""/>
+		                 	</div>
+
+		                  <div class="member-name">
+		                     <h3>Naruto Uzumaki</h3>
+		                     <span>Creative Director</span>
+		                  </div>
+
+		               </div>
+
+		               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+		               nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+
+		               <ul class="member-social">
+		                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-skype"></i></a></li>
+		               </ul>
+
+		          	</div> <!-- /member -->
+
+		            <div class="bgrid member">
+
+		              	<div class="member-header">
+
+								<div class="member-pic">
+		                 		<img src="images/team/member02-k.jpg" alt=""/>
+		                	</div>
+
+		                	<div class="member-name">
+		                   	<h3>Sasuke Uchiha</h3>
+		                   	<span>Lead Designer</span>
+		                	</div>
+
+		               </div>
+
+		               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+		               nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+
+		               <ul class="member-social">
+		                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-skype"></i></a></li>
+		               </ul>
+
+		       		</div> <!-- /member -->
+
+		            <div class="bgrid member first">
+
+							<div class="member-header">
+
+								<div class="member-pic">
+		                		<img src="images/team/member03-k.jpg" alt=""/>
+		               	</div>
+
+		               	<div class="member-name">
+		                  	<h3>Sakura Haruno</h3>
+		                  	<span>Web Designer</span>
+		               	</div>
+
+							</div>
+
+		               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+		               nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+
+		               <ul class="member-social">
+		                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-skype"></i></a></li>
+		               </ul>
+
+		      		</div> <!-- /member -->
+
+		            <div class="bgrid member">
+
+		            	<div class="member-header">
+
+								<div class="member-pic">
+									<img src="images/team/member04-k.jpg" alt=""/>
+		                 	</div>
+
+		                  <div class="member-name">
+		                     <h3>Shikamaru Nara</h3>
+		                     <span>Web Designer</span>
+		                  </div>
+
+		               </div>
+
+		               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+		                  nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+
+		               <ul class="member-social">
+		                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-skype"></i></a></li>
+		               </ul>
+
+		            </div> <!-- /member -->
+
+		         </div> <!-- /twelve -->
+
+	         </div> <!-- /team-wrapper -->
+
+         </div> <!-- /row -->
+
+      </div> <!-- /team -->
+
+   </section> <!-- /about -->
+
+
+   <!-- journal
+   =================================================== -->
+   <section id="journal">
+
+	   <div class="row section-head">
+
+	   	<div class="twelve columns">
+
+			   <h1>Our Latest Ramblings<span>.</span></h1>
+
+			   <hr />
+
+			   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+		       eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+		       voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+		      </p>
+
+		    </div>
 
 	   </div>
 
-	   <nav id="nav-wrap"> 
+      <div class="row">
 
-	   	<a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show Menu</a>
-		   <a class="mobile-btn" href="#" title="Hide navigation">Hide Menu</a>
+      	<div class="twelve columns">
 
-	   	<div class="row">    		            
+	         <div id="blog-wrapper" class="bgrid-third s-bgrid-half mob-bgrid-whole group">
 
-			   	<ul id="nav" class="nav">
-			      	<li class="current"><a href="index.html">Home</a></li>
-			      	<li class="has-children"><a href="#">Dropdown</a>
-	                  <ul>
-	                     <li><a href="#">Submenu 01</a></li>
-	                     <li><a href="#">Submenu 02</a></li>
-	                     <li><a href="#">Submenu 03</a></li>
-	                  </ul>
-	               </li>
-	               <li><a href="demo.html">Demo</a></li>	
-	               <li><a href="archives.html">Archives</a></li>
-			      	<li class="has-children"><a href="single.html">Blog</a>
-							<ul>
-	                     <li><a href="blog.html">Blog Entries</a></li>
-	                     <li><a href="single.html">Single Blog</a></li>	                     
-	                  </ul>
-			      	</li>		      	
-			      	<li><a href="page.html">Page</a></li>
-			   	</ul> <!-- end #nav -->			   	 
+	            <article class="bgrid">
 
-	   	</div> 
+						<h5>September 2, 2014</h5>
+	               <h3><a href="single.html">Sed ut perspiciatis unde omnis iste natus</a></h3>
 
-	   </nav> <!-- end #nav-wrap --> 	     
+	               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+	               isi elit consequat ipsum, nec sagittis sem nibh id elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+	               </p>
 
-   </header> <!-- Header End -->
+	            </article>
 
-   <!-- Content
+	            <article class="bgrid">
+
+						<h5>August 29, 2014</h5>
+	               <h3><a href="single.html">Natus error sit voluptatem accusantium.</a></h3>
+
+	               <p>
+	               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+	               totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+	            	</p>
+
+	            </article>
+
+	            <article class="bgrid">
+
+						<h5>August 28, 2014</h5>
+	               <h3><a href="single.html">Ut enim ad minim veniam quis nostrud</a></h3>
+
+	               <p>
+	               Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+	               isi elit consequat ipsum, nec sagittis sem nibh id elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+	            	</p>
+
+	            </article>
+
+	            <article class="bgrid first">
+
+						<h5>August 27, 2014</h5>
+	               <h3><a href="single.html">Sed ut perspiciatis unde omnis iste natus</a></h3>
+
+	               <p>
+	               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	               consequat.
+	            	</p>
+
+	            </article>
+
+	            <article class="bgrid">
+
+						<h5>August 25, 2014</h5>
+	               <h3><a href="single.html">Rerum dignissimos alias eligendi laudantium quod.</a></h3>
+
+	               <p>
+	               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum fuga distinctio natus ab sint
+	               voluptate quos cumque assumenda ipsa cupiditate aperiam officiis recusandae nemo labore adipisci harum,
+	               ea odio dolor.
+	            	</p>
+
+	            </article>
+
+	            <article class="bgrid">
+
+						<h5>August 23, 2014</h5>
+	               <h3><a href="single.html">Sed ut perspiciatis unde omnis iste natus</a></h3>
+
+	               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cumque, aut nam at,
+	               doloremque repellat blanditiis quo accusantium, rerum dignissimos alias eligendi, laudantium quod.
+	               Autem nihil explicabo ipsa magnam porro.
+	            	</p>
+
+	            </article>
+
+	         </div> <!-- /blog-wrapper -->
+
+	      </div> <!-- /twelve -->
+
+      </div> <!-- /row -->
+
+   </section> <!-- /blog -->
+
+
+   <!-- Contact Section
    ================================================== -->
-   <div id="content-wrap">
+   <section id="contact">
 
-   	<div class="row">
+   	<div class="row section-head">
 
-   		<div id="main" class="eight columns">
+   		<div class="twelve columns">
 
-	   		<article class="entry">
+	         <h1>Get In Touch With Us<span>.</span></h1>
 
-					<header class="entry-header">
+	         <hr />
 
-						<h2 class="entry-title">
-							<a href="single.html" title="">Hey, We Love Open Sans!</a>
-						</h2> 				 
-					
-						<div class="entry-meta">
-							<ul>
-								<li>July 12, 2014</li>
-								<span class="meta-sep">&bull;</span>								
-								<li><a href="#" title="" rel="category tag">Ghost</a></li>
-								<span class="meta-sep">&bull;</span>
-								<li>John Doe</li>
-							</ul>
-						</div> 
-					 
-					</header> 
-					
-					<div class="entry-content">
-						<p>Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor sunt sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat enim mollit amet anim veniam dolor dolor irure velit commodo cillum sit nulla ullamco magna amet magna cupidatat qui labore cillum sit in tempor veniam consequat non laborum adipisicing aliqua ea nisi sint ut quis proident ullamco ut dolore culpa occaecat ut laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.</p>
-					</div> 
+	         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+	         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+	         voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	         </p>
 
-				</article> <!-- end entry -->
+	      </div>
 
-				<article class="entry">
-	   			
-					<header class="entry-header">
+      </div>
 
-						<h2 class="entry-title">
-							<a href="single.html" title="">We All Love Good Typography.</a>
-						</h2> 				 
-					
-						<div class="entry-meta">
-							<ul>
-								<li>July 11, 2014</li>
-								<span class="meta-sep">&bull;</span>							
-								<li>
-									<a href="#" title="" rel="category tag">Wordpress</a>,
-									<a href="#" title="" rel="category tag">Ghost</a>  
-								</li>
-								<span class="meta-sep">&bull;</span>
-								<li>Jane Doe</li>
-							</ul>
-						</div>
-					 
-					</header> 			
+      <div class="row form-section">
 
-					<div class="entry-content">
-						<p>Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor sunt sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat enim mollit amet anim veniam dolor dolor irure velit commodo cillum sit nulla ullamco magna amet magna cupidatat qui labore cillum sit in tempor veniam consequat non laborum adipisicing aliqua ea nisi sint ut quis proident ullamco ut dolore culpa occaecat ut laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in.</p>
-					</div> 
+      	<div id="contact-form" class="twelve columns">
 
-				</article> <!-- end entry -->
+            <form name="contactForm" id="contactForm" method="post" action="">
 
-				<article class="entry">
-	   			
-					<header class="entry-header">
+      			<fieldset>
 
-						<h2 class="entry-title">
-							<a href="single.html" title="">White Space Everywhere.</a>
-						</h2> 				 
-					
-						<div class="entry-meta">
-							<ul>
-								<li>July 10, 2014</li>
-								<span class="meta-sep">&bull;</span>								
-								<li>
-									<a href="#" title="" rel="category tag">Joomla</a>,
-									<a href="#" title="" rel="category tag">Drupal</a>  
-								</li>
-								<span class="meta-sep">&bull;</span>
-								<li>Naruto Uzumaki</li>
-							</ul>
-						</div> 
-					 
-					</header> 			
+                  <div class="row">
 
-					<div class="entry-content">
-						<p>Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor sunt sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat enim mollit amet anim veniam dolor dolor irure velit commodo cillum sit nulla ullamco magna amet magna cupidatat qui labore cillum sit in tempor veniam consequat non laborum adipisicing aliqua ea nisi sint ut quis proident ullamco ut dolore culpa occaecat ut laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.</p>
-					</div> 
+	                  <div class="six columns mob-whole">
+	                  	<label for="contactFname">First Name <span class="required">*</span></label>
+	      					<input name="contactFname" type="text" id="contactFname" placeholder="First Name" value="" />
+	                  </div>
 
-				</article> <!-- end entry -->  
+	                  <div class="six columns mob-whole">
+	                  	<label for="contactLname">Last Name <span class="required">*</span></label>
+	      					<input name="contactLname" type="text" id="contactLname" placeholder="Last Name" value="" />
+	                  </div>
 
-				<article class="entry">
-	   			
-					<header class="entry-header">
+                  </div>
 
-						<h2 class="entry-title">
-							<a href="single.html" title="">Simple And Minimalist Designs.</a>
-						</h2> 				 
-					
-						<div class="entry-meta">
-							<ul>
-								<li>July 09, 2014</li>
-								<span class="meta-sep">&bull;</span>								
-								<li>
-									<a href="#" title="" rel="category tag">Ghost</a>  
-								</li>
-								<span class="meta-sep">&bull;</span>
-								<li>Naruto Uzumaki</li>
-							</ul>
-						</div> 
-					 
-					</header> 			
+                  <div class="row">
 
-					<div class="entry-content">
-						<p>Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor sunt sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat enim mollit amet anim veniam dolor dolor irure velit commodo cillum sit nulla ullamco magna amet magna cupidatat qui labore cillum sit in tempor veniam consequat non laborum adipisicing aliqua ea nisi sint ut quis proident ullamco ut dolore culpa occaecat ut laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.</p>
-					</div> 
+	                  <div class="six columns mob-whole">
+	                  	<label for="contactEmail">Email <span class="required">*</span></label>
+	      					<input name="contactEmail" type="text" id="contactEmail" placeholder="Email" value="" />
+	                  </div>
 
-				</article> <!-- end entry -->  	
-						
+	                  <div class="six columns mob-whole">
+	                  	<label for="contactSubject">Subject</label>
+	      					<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject"  value="" />
+	                  </div>
 
-   		</div> <!-- end main -->
+                  </div>
 
-   		<div id="sidebar" class="four columns">
+                  <div class="row">
 
-   			<div class="widget widget_search">
-                  <h3>Search</h3> 
-                  <form action="#">
+	                  <div class="twelve columns">
+	                     <label  for="contactMessage">Message <span class="required">*</span></label>
+	                     <textarea name="contactMessage"  id="contactMessage" placeholder="Your Message" rows="10" cols="50" ></textarea>
+	                  </div>
 
-                     <input type="text" value="Search here..." onblur="if(this.value == '') { this.value = 'Search here...'; }" onfocus="if (this.value == 'Search here...') { this.value = ''; }" class="text-search">
-                     <input type="submit" value="" class="submit-search">
+                  </div>
 
-                  </form>
-               </div>
+                  <div>
+                     <button class="submit full-width">Send Message</button>
+                     <div id="image-loader">
+                        <img src="images/loader.gif" alt="" />
+                     </div>
+                  </div>
 
-   			<div class="widget widget_categories group">
-   				<h3>Categories.</h3> 
-   				<ul>
-						<li><a href="#" title="">Wordpress</a> (2)</li>
-						<li><a href="#" title="">Ghost</a> (14)</li>
-						<li><a href="#" title="">Joomla</a> (5)</li>
-						<li><a href="#" title="">Drupal</a> (3)</li>
-						<li><a href="#" title="">Magento</a> (2)</li>
-						<li><a href="#" title="">Uncategorized</a> (9)</li>						
-					</ul>
-				</div>
+      			</fieldset>
 
-				<div class="widget widget_text group">
-					<h3>Widget Text.</h3>
+      		</form> <!-- /contactForm -->
 
-   				<p>Lorem ipsum Ullamco commodo laboris sit dolore commodo aliquip incididunt fugiat esse dolor aute fugiat minim eiusmod do velit labore fugiat officia ad sit culpa labore in consectetur sint cillum sint consectetur voluptate adipisicing Duis irure magna ut sit amet reprehenderit.</p>
+            <!-- message box -->
+            <div id="message-warning"></div>
+            <div id="message-success">
+               <i class="fa fa-check"></i>Your message was sent, thank you!<br />
+    			</div>
 
-   			</div>
+         </div> <!-- /contact-form -->
 
-   			<div class="widget widget_tags">
-               <h3>Post Tags.</h3>
+      </div> <!-- /form-section -->
 
-               <div class="tagcloud group">
-                	<a href="#">Corporate</a>
-                  <a href="#">Onepage</a>
-                  <a href="#">Agency</a>
-                  <a href="#">Multipurpose</a>
-                  <a href="#">Blog</a>
-                  <a href="#">Landing Page</a>
-                  <a href="#">Resume</a>
-               </div>
-                  
-            </div>
+   </section>  <!-- /contact-->
 
-            <div class="widget widget_popular">
-               <h3>Popular Post.</h3>
-
-               <ul class="link-list">
-                  <li><a href="#">Sint cillum consectetur voluptate.</a></li>
-                  <li><a href="#">Lorem ipsum Ullamco commodo.</a></li>
-                  <li><a href="#">Fugiat minim eiusmod do.</a></li>                     
-               </ul>
-                  
-            </div>
-   			
-   		</div> <!-- end sidebar -->
-
-   	</div> <!-- end row -->
-
-   </div> <!-- end content-wrap -->
-   
 
    <!-- Footer
    ================================================== -->
    <footer>
 
-      <div class="row"> 
+      <div class="row">
 
-      	<div class="twelve columns">	
-				<ul class="social-links">
-               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>               
-               <li><a href="#"><i class="fa fa-github-square"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa fa-flickr"></i></a></li>               
-               <li><a href="#"><i class="fa fa-skype"></i></a></li>
-            </ul>			
-      	</div>
-      	
-         <div class="six columns info">
+         <div class="six columns tab-whole footer-about">
 
-            <h3>About Keep It Simple</h3> 
+				<h3>About Puremedia</h3>
 
             <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
             Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-            nibh id elit. 
+            nibh id elit.
             </p>
 
-            <p>Lorem ipsum Sed nulla deserunt voluptate elit occaecat culpa cupidatat sit irure sint 
-            sint incididunt cupidatat esse in Ut sed commodo tempor consequat culpa fugiat incididunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            	incididunt ut labore et dolore magna aliqua.</p>
+
+         </div> <!-- /footer-about -->
+
+         <div class="six columns tab-whole right-cols">
+
+            <div class="row">
+
+               <div class="columns">
+                  <h3 class="address">Contact Us</h3>
+                  <p>
+                  1600 Amphitheatre Parkway<br>
+                  Mountain View, CA<br>
+                  94043 US
+                  </p>
+
+                  <ul>
+                    <li><a href="tel:6473438234">647.343.8234</a></li>
+                    <li><a href="tel:1234567890">123.456.7890</a></li>
+                    <li><a href="mailto:someone@puremedia.com">someone@puremedia.com</a></li>
+                  </ul>
+               </div> <!-- /columns -->
+
+               <div class="columns last">
+                  <h3 class="contact">Follow Us</h3>
+
+                  <ul>
+                     <li><a href="#">Facebook</a></li>
+                     <li><a href="#">Twitter</a></li>
+                     <li><a href="#">GooglePlus</a></li>
+                     <li><a href="#">Instagram</a></li>
+                     <li><a href="#">Flickr</a></li>
+                     <li><a href="#">Skype</a></li>
+                  </ul>
+
+               </div> <!-- /columns -->
+
+            </div> <!-- /Row(nested) -->
 
          </div>
 
-         <div class="four columns">
+         <p class="copyright">&copy; Copyright 2014 Puremedia. Design by <a href="http://www.styleshout.com/">Styleshout.</a></p>
 
-            <h3>Photostream</h3>
-            
-            <ul class="photostream group">
-               <li><a href="#"><img alt="thumbnail" src="images/thumb.jpg"></a></li>
-               <li><a href="#"><img alt="thumbnail" src="images/thumb.jpg"></a></li>
-               <li><a href="#"><img alt="thumbnail" src="images/thumb.jpg"></a></li>
-               <li><a href="#"><img alt="thumbnail" src="images/thumb.jpg"></a></li>
-               <li><a href="#"><img alt="thumbnail" src="images/thumb.jpg"></a></li>
-               <li><a href="#"><img alt="thumbnail" src="images/thumb.jpg"></a></li>
-               <li><a href="#"><img alt="thumbnail" src="images/thumb.jpg"></a></li>
-               <li><a href="#"><img alt="thumbnail" src="images/thumb.jpg"></a></li>
-            </ul>           
-
+         <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#hero"><span>Top</span><i class="fa fa-long-arrow-up"></i></a>
          </div>
 
-         <div class="two columns">
-            <h3 class="social">Navigate</h3>
+      </div> <!-- /row -->
 
-            <ul class="navigate group">
-               <li><a href="#">Home</a></li>
-               <li><a href="#">Blog</a></li>
-               <li><a href="#">Demo</a></li>
-               <li><a href="#">Archives</a></li>
-               <li><a href="#">About</a></li>
-            </ul>
-         </div>
-
-         <p class="copyright">&copy; Copyright 2014 Keep It Simple. &nbsp; Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a>.</p>
-        
-      </div> <!-- End row -->
-
-      <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-chevron-up"></i></a></div>
-
-   </footer> <!-- End Footer-->
+   </footer> <!-- /footer -->
 
 
    <!-- Java Script
    ================================================== -->
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>  
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/backstretch.js"></script>
+   <script src="js/waypoints.js"></script>
    <script src="js/main.js"></script>
 
 </body>
