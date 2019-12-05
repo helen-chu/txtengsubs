@@ -2,31 +2,31 @@
 /*
 /* Main JS
 /*
------------------------------------------------------------------------------------*/  
+-----------------------------------------------------------------------------------*/
 
 (function($) {
 
 	/*---------------------------------------------------- */
 	/* Preloader
-	------------------------------------------------------ */ 
+	------------------------------------------------------ */
   	$(window).load(function() {
 
-   	// will first fade out the loading animation 
-    	$("#status").fadeOut("slow"); 
+   	// will first fade out the loading animation
+    	$("#status").fadeOut("slow");
 
-    	// will fade out the whole DIV that covers the website. 
-    	$("#preloader").delay(500).fadeOut("slow").remove();      
+    	// will fade out the whole DIV that covers the website.
+    	$("#preloader").delay(500).fadeOut("slow").remove();
 
-  	}) 
+  	})
 
   	/*----------------------------------------------------*/
   	/* Backstretch
   	/*----------------------------------------------------*/
 
   	if($("html").hasClass('ie8')) {
-  		$("#hero").backstretch("images/hero-bg.jpg");  	
-  		$("#page-title").backstretch("images/hero-bg.jpg");	
-  	} 
+  		$("#hero").backstretch("images/engsubs-bg.jpeg");
+  		$("#page-title").backstretch("images/engsubs-bg.jpeg");	
+  	}
 
    /*----------------------------------------------------*/
   	/* FitText Settings
@@ -66,31 +66,31 @@
   	-------------------------------------------------------*/
 	$('.alert-box').on('click', '.close', function() {
 	  $(this).parent().fadeOut(500);
-	});	
+	});
 
 
    /*-----------------------------------------------------*/
   	/* Mobile Menu
-   ------------------------------------------------------ */  
+   ------------------------------------------------------ */
    var menu_icon = $("<span class='menu-icon'></span>");
-  	var toggle_button = $("<a>", {                         
-                        id: "toggle-btn", 
+  	var toggle_button = $("<a>", {
+                        id: "toggle-btn",
                         html : "<span class='menu-text'>Menu</span>",
                         title: "Menu",
-                        href : "#" } 
+                        href : "#" }
                         );
   	var nav_wrap = $('nav#nav-wrap')
-  	var nav = $("ul#nav");  
-   
-   /* if JS is enabled, remove the two a.mobile-btns 
+  	var nav = $("ul#nav");
+
+   /* if JS is enabled, remove the two a.mobile-btns
   	and dynamically prepend a.toggle-btn to #nav-wrap */
-  	nav_wrap.find('a.mobile-btn').remove(); 
-  	toggle_button.append(menu_icon); 
-   nav_wrap.prepend(toggle_button); 
+  	nav_wrap.find('a.mobile-btn').remove();
+  	toggle_button.append(menu_icon);
+   nav_wrap.prepend(toggle_button);
 
   	toggle_button.on("click", function(e) {
    	e.preventDefault();
-    	nav.slideToggle("fast");     
+    	nav.slideToggle("fast");
   	});
 
   	if (toggle_button.is(':visible')) nav.addClass('mobile');
@@ -99,8 +99,8 @@
     	else nav.removeClass('mobile');
   	});
 
-  	$('ul#nav li a').on("click", function() {      
-   	if (nav.hasClass('mobile')) nav.fadeOut('fast');      
+  	$('ul#nav li a').on("click", function() {
+   	if (nav.hasClass('mobile')) nav.fadeOut('fast');
   	});
 
 
@@ -108,7 +108,7 @@
   	/* Smooth Scrolling
   	------------------------------------------------------ */
   	$('.smoothscroll').on('click', function (e) {
-	 	
+
 	 	e.preventDefault();
 
    	var target = this.hash,
@@ -154,7 +154,7 @@
    /*----------------------------------------------------*/
   	/* Flexslider
   	/*----------------------------------------------------*/
-  	$(window).load(function() {  		
+  	$(window).load(function() {
 
 	  	$('#hero-slider').flexslider({
 	   	namespace: "flex-",
@@ -166,11 +166,11 @@
 	      slideshowSpeed: 7000,
 	      animationSpeed: 600,
 	      randomize: false
-	   });	   
+	   });
 
    });
 
- 
+
 	/*----------------------------------------------------*/
 	/*	contact form
 	------------------------------------------------------*/
@@ -185,8 +185,8 @@
       var contactSubject = $('#contactForm #contactSubject').val();
       var contactMessage = $('#contactForm #contactMessage').val();
 
-      var data = 'contactFname=' + contactFname  + '&contactLname=' + contactLname + 
-                 '&contactEmail=' + contactEmail + '&contactSubject=' + contactSubject + 
+      var data = 'contactFname=' + contactFname  + '&contactLname=' + contactLname +
+                 '&contactEmail=' + contactEmail + '&contactSubject=' + contactSubject +
                  '&contactMessage=' + contactMessage;
 
       $.ajax({
@@ -201,7 +201,7 @@
                $('#image-loader').fadeOut();
                $('#message-warning').hide();
                $('#contactForm').fadeOut();
-               $('#message-success').fadeIn();   
+               $('#message-success').fadeIn();
             }
             // There was an error
             else {
@@ -219,7 +219,7 @@
 
 	/*-----------------------------------------------------*/
   	/* Back to top
-   ------------------------------------------------------ */ 
+   ------------------------------------------------------ */
 	var pxShow = 300; // height on which the button will show
 	var fadeInTime = 400; // how slow/fast you want the button to show
 	var fadeOutTime = 400; // how slow/fast you want the button to hide
@@ -234,7 +234,7 @@
 			jQuery("#go-top").fadeOut(fadeOutTime);
 		}
 
-	}); 
+	});
 
 
 })(jQuery);
