@@ -67,6 +67,7 @@ div.recent {
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
+    overflow: hidden;
 }
 .video {
     position: absolute;
@@ -80,7 +81,7 @@ div.video-title {
     width: 100%;
     text-align: center;
     display: block;
-    font-size: 120%;
+    font-size: 100%;
     padding: 0;
     list-style-type: none;
     flex-direction: row;
