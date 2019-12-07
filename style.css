@@ -9,12 +9,13 @@ header {
     margin-left: 11%;
 }
 ul {
+    text-align: center;
     display: flex;
     font-size: 100%;
     padding: 0;
     list-style-type: none;
     flex-direction: row;
-    font-family: 'oswald', sans-serif;
+    font-family: 'oswald';
     width: 100%;
 }
 
@@ -25,7 +26,6 @@ ul#nav li {
 	height: 72px;
     display: inline-block;
     width: 15%;
-    text-align: center;
 }
 ul#nav li a {
 	display: inline-block;
@@ -52,11 +52,52 @@ ul#nav li.current a {
 	color: white;
 }
 
-@media screen and (max-width: 600px) {
+
+div.recent {
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-size: 125%;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.container {
+    position: relative;
+    margin-left: 18%;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: 65%;
+}
+
+div.video-title {
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 120%;
+    padding: 0;
+    list-style-type: none;
+    flex-direction: row;
+    font-family: 'oswald';
+}
+
+@media screen and (max-width: 650px) {
     ul#nav {
-    font-size: 60%;
+        font-size: 55%;
     }
     header {
         margin-left: 9%;
+    }
+    div.recent {
+        font-size: 25%;
+    }
+    div.video-title{
+        font-size: 60%;
     }
 }
