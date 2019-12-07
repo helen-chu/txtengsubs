@@ -54,8 +54,8 @@ ul#nav li.current a {
 
 
 div.recent {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 125%;
+    font-family: Impact, Haettenschweiler, 'Arial Bold', sans-serif;
+    font-size: 20px;
     text-align: center;
     text-decoration: underline;
 
@@ -99,7 +99,7 @@ div.video-title {
         margin-left: 9%;
     }
     div.recent {
-        font-size: 25%;
+        font-size: 9px;
     }
     div.video-title{
         font-size: 7px;
