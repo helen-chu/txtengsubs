@@ -55,11 +55,10 @@ ul#nav li.current a {
 
 
 div.recent {
-    font-family: Impact, 'Arial Bold', sans-serif;
+    font-family: Impact, 'Arial Black', sans-serif;
     font-size: 20px;
     text-align: center;
     text-decoration: underline;
-
 }
 html, body
 {
@@ -79,6 +78,9 @@ html, body
     left: 0;
     width: 75%;
     height: 75%;
+    border: 8px solid #ffff00;
+    border-radius: 10px;
+    background-color: #000;
 }
 
 div.video-title {
@@ -91,7 +93,9 @@ div.video-title {
     flex-direction: row;
     font-family: 'oswald', sans-serif;
 }
-
+.fas{
+    color: #000000;
+}
 @media screen and (max-width: 650px) {
     ul#nav {
         font-size: 8px;
@@ -108,5 +112,9 @@ div.video-title {
     }
     div.video-title{
         font-size: 7px;
+    }
+    .video {
+        border: 3px solid #ffff00;
+        margin-left: 12%;
     }
     }
