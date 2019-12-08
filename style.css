@@ -170,6 +170,10 @@ div.video-title {
     border-right: 0;
   }
   
+  .event-day{
+    background-color: #ffff00;
+  }
+  
   /* CALENDAR ENDS */
 
 @media screen and (max-width: 700px) {
@@ -199,9 +203,9 @@ div.video-title {
         margin-left: 12%;
     }
     main{
-        margin-left: 0;
-        padding-left: 0;
-        width: 100%;
+        margin-left: 3%;
+        padding: 0;
+        width: 92%;
     }
     .calendar{
         border: 1px solid #e1e1e1;
@@ -214,8 +218,12 @@ div.video-title {
     text-align: center;
       }
       .calendar__day {
-        padding: 10px 10px 0 10px;
+        padding: 7px 6px 0 6px;
         border-right: 1px solid #e1e1e1;
         border-top: 1px solid #e1e1e1;
       }
+    .event {
+        font-size:5px;
+        font-weight:bold;
+    }
     }
