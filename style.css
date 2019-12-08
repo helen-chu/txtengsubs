@@ -223,10 +223,11 @@ html, body
     text-decoration: none;
     margin-top: 200px;
     margin-bottom: 5px;
+    padding-bottom: 15px;
   }
   a.design-link {
       text-decoration: none;
-      color: rgb(35, 167, 255);
+      color: rgb(47, 172, 255);
       opacity: 60%;
       -moz-transition: all 0.2s ease-in-out;
       -o-transition: all 0.2s ease-in-out;
