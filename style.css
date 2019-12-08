@@ -104,6 +104,9 @@ div.video-title {
   main {
     grid-area: content;
     padding: 10px;
+    width:80%;
+    display: block;
+    margin-left: 8.6%;
   }
   
   /* MAIN */
@@ -113,22 +116,27 @@ div.video-title {
     grid-template-columns: repeat(7, 1fr);  
   }
   .calendar__week {
-    grid-auto-rows: 100px;
+    grid-auto-rows: 120px;
     text-align: right;
   }
   
   .calendar__header {
-    grid-auto-rows: 50px;
+    grid-auto-rows: 40px;
     align-items: center;
     text-align: center;
   }
   
   .calendar__day {
-    padding: 16px;
+    padding: 16px 16px 0 16px;
   }
-  
-  
-  
+ 
+  .event {
+      text-decoration: underline;
+      text-decoration-color: #fffb00;
+  }
+  .kst{
+      font-size: 70%;
+  }
   
   /* COSMETIC STYLING */
   
@@ -139,13 +147,7 @@ div.video-title {
   body {
     font-family: Montserrat;
     font-weight: 100;
-    color: #A8B2B9;
-  }
-  
-
-  .copyright {
-    font-size: 0.7rem;
-    font-weight: 400;
+    color: rgb(70, 70, 70);
   }
   
   .calendar {
@@ -168,36 +170,6 @@ div.video-title {
     border-right: 0;
   }
   
-  .toggle{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  
-    text-align: center;
-    font-size: 0.9em;
-  }
-  .toggle__option{
-    padding: 16px;
-    border: 1px solid #e1e1e1;
-    border-radius: 8px;
-    text-transform: capitalize;
-    cursor: pointer;
-  }
-  .toggle__option:first-child {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-  }
-  .toggle__option:last-child {
-      border-left: 0;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-  }
-  .toggle__option--selected{
-    border-color: white;
-    background-color: white;
-    color: var(--red);
-    font-weight: 500;
-    box-shadow: 1px 2px 30px -5px var(--red);
-  }
   /* CALENDAR ENDS */
 
 @media screen and (max-width: 650px) {
@@ -212,9 +184,9 @@ div.video-title {
     }
     ul#nav li {
         text-align: center;
-        width: 16%;
-        margin: 17% 0 0 0;
-        height: 52px;
+        width: 16.5%;
+        margin: 18% 0 0 0;
+        height: 48px;
     }
     div.recent {
         font-size: 8px;
@@ -226,4 +198,17 @@ div.video-title {
         border: 3px solid #ffff00;
         margin-left: 12%;
     }
+    main{
+        margin-left: 7.5%;
+    }
+    .calendar__header{
+        grid-auto-rows: 20px;
+    }
+      .calendar__week {
+    grid-auto-rows: 80px;
+    text-align: center;
+      }
+      .calendar__day {
+        padding: 10px 10px 0 10px;
+      }
     }
