@@ -111,6 +111,26 @@ html, body
     flex-direction: row;
     font-family: 'oswald', sans-serif;
 }
+.videolist {
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    padding: 0;
+    list-style-type: none;
+    flex-direction: row;
+    font-family: 'oswald', sans-serif;
+}
+.votinglist {
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    padding: 0;
+    list-style-type: none;
+    flex-direction: row;
+    font-family: 'oswald', sans-serif;
+}
 .fas{
     color: #000000;
 }
@@ -201,7 +221,7 @@ html, body
   .design {
     text-align: center;
     text-decoration: none;
-    margin-top: 450px;
+    margin-top: 200px;
     margin-bottom: 5px;
   }
   a.design-link {
@@ -233,6 +253,18 @@ html, body
   a.yellowlink:hover {
     color: rgb(194, 194, 194);
 }
+.videolink {
+    text-decoration: none;
+    color: black;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+a.videolink:hover {
+  color: rgb(194, 194, 194);
+}
 @media screen and (max-width: 800px) {
     .menu_text {
         display: none;
@@ -257,6 +289,12 @@ html, body
     }
     .video-title{
         font-size: 7px;
+    }
+    .videolist{
+        font-size: 8px;
+    }
+    .votinglist{
+        font-size: 8px;
     }
     .video {
         border: 3px solid #ffff00;
@@ -290,6 +328,6 @@ html, body
         font-size: 7px;
     }
     .design{
-        font-size: 7px;
+        font-size: 6px;
     }
     }
