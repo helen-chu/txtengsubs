@@ -116,7 +116,7 @@ div.video-title {
     grid-template-columns: repeat(7, 1fr);  
   }
   .calendar__week {
-    grid-auto-rows: 120px;
+    grid-auto-rows: 140px ;
     text-align: right;
   }
   
@@ -152,7 +152,7 @@ div.video-title {
   
   .calendar {
     background-color: white;
-    border: 1px solid #e1e1e1;
+    border: 2px solid #e1e1e1;
   }
   
   .calendar__header > div {
@@ -162,8 +162,8 @@ div.video-title {
   }
   
   .calendar__day {
-    border-right: 1px solid #e1e1e1;
-    border-top: 1px solid #e1e1e1;
+    border-right: 2px solid #e1e1e1;
+    border-top: 2px solid #e1e1e1;
   }
   
   .calendar__day:last-child {
@@ -172,7 +172,7 @@ div.video-title {
   
   /* CALENDAR ENDS */
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     .menu_text {
         display: none;
     }
@@ -201,6 +201,9 @@ div.video-title {
     main{
         margin-left: 7.5%;
     }
+    .calendar{
+        border: 1px solid #e1e1e1;
+    }
     .calendar__header{
         grid-auto-rows: 20px;
     }
@@ -210,5 +213,7 @@ div.video-title {
       }
       .calendar__day {
         padding: 10px 10px 0 10px;
+        border-right: 1px solid #e1e1e1;
+        border-top: 1px solid #e1e1e1;
       }
     }
