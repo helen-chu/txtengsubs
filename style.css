@@ -23,7 +23,7 @@ ul {
 ul#nav li {
 	position: relative;
     list-style: none;
-    margin: 23% 0 0 0;
+    margin: 26% 0 0 0;
 	height: 72px;
     display: inline-block;
     width: 17%;
@@ -104,9 +104,9 @@ div.video-title {
   main {
     grid-area: content;
     padding: 10px;
-    width:80%;
+    width:85%;
     display: block;
-    margin-left: 9.6%;
+    margin-left: 6.5%;
   }
   
   /* MAIN */
@@ -171,10 +171,25 @@ div.video-title {
   }
   
   .event-day{
-    background-color: #ffff00;
+    background-color: #ffff76;
+  }
+  .current-month {
+    font-family:'oswald', sans-serif;
+    font-size: 20px;
+    text-align: center;
   }
   
   /* CALENDAR ENDS */
+  .design {
+    text-align: center;
+    text-decoration: none;
+  }
+  a:visited{
+      text-decoration: none;
+  }
+  a.design {
+      color: yellow;
+  }
 
 @media screen and (max-width: 700px) {
     .menu_text {
@@ -209,6 +224,7 @@ div.video-title {
     }
     .calendar{
         border: 1px solid #e1e1e1;
+        font-size: 7px;
     }
     .calendar__header{
         grid-auto-rows: 20px;
@@ -224,6 +240,11 @@ div.video-title {
       }
     .event {
         font-size:5px;
-        font-weight:bold;
+    }
+    .current-month {
+        font-size: 7px;
+    }
+    .design{
+        font-size: 30%;
     }
     }
