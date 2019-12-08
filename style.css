@@ -106,7 +106,7 @@ div.video-title {
     padding: 10px;
     width:80%;
     display: block;
-    margin-left: 8.6%;
+    margin-left: 9.6%;
   }
   
   /* MAIN */
@@ -199,7 +199,9 @@ div.video-title {
         margin-left: 12%;
     }
     main{
-        margin-left: 7.5%;
+        margin-left: 0;
+        padding-left: 0;
+        width: 100%;
     }
     .calendar{
         border: 1px solid #e1e1e1;
