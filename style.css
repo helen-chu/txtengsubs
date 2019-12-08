@@ -6,6 +6,24 @@ body {
     background-attachment: scroll;
     background-repeat: no-repeat;
 }
+.logo-picture {
+    margin-top: 10%;
+}
+
+.responsive {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: auto;
+  }
+
+@media screen and (max-width: 800px) {
+    .responsive {
+        width: 40%;
+    } 
+}
 header {
     margin-left: 14%;
 }
@@ -23,7 +41,7 @@ ul {
 ul#nav li {
 	position: relative;
     list-style: none;
-    margin: 26% 0 0 0;
+    margin: 1% 0 0 0;
 	height: 72px;
     display: inline-block;
     width: 17%;
@@ -52,7 +70,6 @@ ul#nav li.current a {
 	background: #f26522;
 	color: white;
 }
-
 
 div.recent {
     font-family: Impact, 'Arial Black', sans-serif;
@@ -84,7 +101,7 @@ html, body
     background-color: #000;
 }
 
-div.video-title {
+.video-title {
     width: 100%;
     text-align: center;
     display: block;
@@ -133,6 +150,7 @@ div.video-title {
   .event {
       text-decoration: underline;
       text-decoration-color: #fffb00;
+      font-size: 12px;
   }
   .kst{
       font-size: 70%;
@@ -183,15 +201,39 @@ div.video-title {
   .design {
     text-align: center;
     text-decoration: none;
+    margin-top: 450px;
+    margin-bottom: 5px;
   }
-  a:visited{
+  a.design-link {
       text-decoration: none;
+      color: rgb(35, 167, 255);
+      opacity: 60%;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
   }
-  a.design {
-      color: yellow;
+  a.design-link:hover {
+      color: rgb(194, 194, 194);
   }
-
-@media screen and (max-width: 700px) {
+  a.design-link:visited {
+      color: rgb(35, 167, 255);
+  }
+  .yellowlink {
+      text-decoration: none;
+      color: black;
+      background-color: #ffff7b;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+  }
+  a.yellowlink:hover {
+    color: rgb(194, 194, 194);
+}
+@media screen and (max-width: 800px) {
     .menu_text {
         display: none;
     }
@@ -204,13 +246,16 @@ div.video-title {
     ul#nav li {
         text-align: center;
         width: 16.5%;
-        margin: 18% 0 0 0;
-        height: 48px;
+        height: 33px;
+    }
+    ul#nav li a {
+        display: inline-block;
+        padding: 0 12px;
     }
     div.recent {
         font-size: 8px;
     }
-    div.video-title{
+    .video-title{
         font-size: 7px;
     }
     .video {
@@ -245,6 +290,6 @@ div.video-title {
         font-size: 7px;
     }
     .design{
-        font-size: 30%;
+        font-size: 7px;
     }
     }
