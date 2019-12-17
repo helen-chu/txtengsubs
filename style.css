@@ -184,7 +184,7 @@ html, body
     grid-template-columns: repeat(7, 1fr);  
   }
   .calendar__week {
-    grid-auto-rows: 140px ;
+    grid-auto-rows: 155px ;
     text-align: right;
   }
   
